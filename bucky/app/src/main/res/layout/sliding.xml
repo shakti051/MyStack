@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="handle" android:id="@+id/handle1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="handle" android:id="@+id/handle2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="handle" android:id="@+id/handle3" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="handle" android:id="@+id/handle4" />
+</LinearLayout>
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/slidingD" android:handle="@+id/handle"
+        android:content="@+id/content"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handle"
+            android:id="@+id/handle"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox"
+                android:id="@+id/cbSlidable"
+                />
+        </LinearLayout>
+    </SlidingDrawer>
+
+</FrameLayout>
